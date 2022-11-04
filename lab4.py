@@ -27,7 +27,9 @@ def Semmetric(m):
 
     return symmetric
 
+
 Semmetric(m)
+
 
 def Transitivity(m):
     transitivity = True
@@ -40,6 +42,8 @@ def Transitivity(m):
                         return transitivity
 
     return transitivity
+
+
 Transitivity(m)
 
 
@@ -74,22 +78,26 @@ def Equivalence():
     else:
         print("Відношення не еквівалетне")
 
+
 Equivalence()
 
 
 def PartialOrder():
-    if Reflective(m) == True and Transitivity(m) == True and Antisymmetric(m):
+    if Reflective(m) == True and Transitivity(m) == True and Antisymmetric(m) == True:
         print("Відношення є відношенням часткового порядку")
     else:
         print("Відношення не є відношенням часткового порядку")
 
+
 PartialOrder()
+
 
 def StrictOrder():
     if Transitivity(m) == True and Antisymmetric(m) == True and Reflective(m) == False:
         print("Відношення є відношенням строгого порядку")
     else:
         print("Відношення не є відношенням строгого порядку")
+
 
 StrictOrder()
 print("----------------------------------------------------------------")
